@@ -1,1 +1,3 @@
-codes that I made learning C in school.
+# Learning C in school
+
+Codes that I'm making learning C in school.
