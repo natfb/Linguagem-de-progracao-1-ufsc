@@ -1,22 +1,17 @@
 #include <stdio.h>
 
+int fatorialr(n){
+if(n==1 || n==0){
+return 1;
+}else{
+return n*fatorialr(n-1);
+}
+}
+
 int main(){
-
-    float a=0;
-    float soma=0;
-
-    int c=1;
-
-    do{
-    printf("digite um numero: ");
-    scanf("%f", &a);
-    soma +=a;
-    c++;
-    }while(c<=5);
-
-
-    float med = soma/5;
-    printf("a media e %.1f", med);
-
-return 0;
+ int n, s;
+ scanf("%d", &n);
+ s = fatorialr(n);
+ //sr = somaintr(n);
+ printf("%d",s);
 }
