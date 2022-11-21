@@ -1,18 +1,24 @@
- #include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+void soma(){
 
- int main(){
+}
+int main(){
+     int i, n, *nn;
+    printf("tamanho do vetor: ");
+    scanf("%i", &n);
 
-    int c[10];
-    int i;
+    nn = (int*) malloc(n*sizeof(int));
+    //printf("%i", *nn);
 
-    for (i = 0; i<10; i++)
-        c[i] = i*2;
+    for(i = 0; i < n; i++){
+       scanf("%i", &*(nn + i));
+    }
+    for(i = 0; i < n; i++){
+       scanf("%i", &*(nn + i));
+    }
+    for(i = 0; i < n; i++){
+       printf("%i", *(nn + i));
+    }
 
-    printf("Elemento=     Valor \n");
-
-    for(i=0; i<10; i++)
-        printf("c[%i]=       %i \n", i, c[i]);
-
-
- return 0;
- }
+}
